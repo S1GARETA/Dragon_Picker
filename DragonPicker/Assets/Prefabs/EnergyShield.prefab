@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5266100757487935579}
   - component: {fileID: 3946340011399714900}
   - component: {fileID: 39290183501530948}
+  - component: {fileID: 5544579572179532691}
   m_Layer: 0
   m_Name: EnergyShield
   m_TagString: Untagged
@@ -114,3 +115,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5544579572179532691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6350027414942721145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704175ea9daa1f24f8289269e36358d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DragonPicker : MonoBehaviour
@@ -15,6 +13,15 @@ public class DragonPicker : MonoBehaviour
             GameObject tShieldGo = Instantiate<GameObject>(energyShieldPrefab);
             tShieldGo.transform.position = new Vector3(0, energyShieldBottomY, 0);
             tShieldGo.transform.localScale = new Vector3(1*i, 1*i, 1*i);
+        }
+    }
+
+    public void DragonEggDestroyed()
+    {
+        GameObject[] tDragonEggArray = GameObject.FindGameObjectsWithTag("Dragon Egg");
+        foreach (GameObject tGO in tDragonEggArray)
+        {
+            Destroy(tGO);
         }
     }
 }
