@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4468cf691a0d9e74183ca9beb3c7c990, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.022568524, g: 0.10504761, b: 0.21713412, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -145,6 +145,75 @@ MonoBehaviour:
   timeBetweenEggDrops: 2
   leftRightDistance: 10
   chanceDirection: 0.01
+--- !u!1001 &631966145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 162790, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_Name
+      value: Dragon_Mountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.535255
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07350644
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8401821
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.046828765
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 400386, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ca96557da1df9b41b73e0e271a0c65d, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +466,7 @@ MonoBehaviour:
   numEnergyShield: 3
   energyShieldBottomY: -6
   energyShieldRadius: 1.5
+  shieldList: []
 --- !u!1 &963654363
 GameObject:
   m_ObjectHideFlags: 0
