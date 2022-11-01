@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class DragonEgg : MonoBehaviour
 {
-    [SerializeField] private static float bottomY = -30;
+    [SerializeField] private static float bottomY = -30f;
+    [SerializeField] private AudioSource audioSource;
+    
     private void OnTriggerEnter(Collider other)
     {
         ParticleSystem ps = GetComponent<ParticleSystem>();
@@ -11,7 +13,10 @@ public class DragonEgg : MonoBehaviour
 
         Renderer rend;
         rend = GetComponent<Renderer>();
-        rend.enabled = false;    
+        rend.enabled = false;
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
     void Update()
     {
