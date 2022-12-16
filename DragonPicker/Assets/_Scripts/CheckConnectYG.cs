@@ -8,13 +8,13 @@ public class CheckConnectYG : MonoBehaviour
 {
     private void OnEnable() => YandexGame.GetDataEvent += CheckSDK;
     private void OnDisable() => YandexGame.GetDataEvent -= CheckSDK;
-    [SerializeField] private TextMeshProUGUI scoreBest;
+    private TextMeshProUGUI scoreBest;
+    [SerializeField] private TextMeshProUGUI userStatus;
     [SerializeField] private TextMeshProUGUI achivmentList;
     void Start()
     {
         if (YandexGame.SDKEnabled == true)
         {
-            // YandexGame.ResetSaveProgress();
             CheckSDK();
         }
     }
@@ -23,6 +23,7 @@ public class CheckConnectYG : MonoBehaviour
     {
         if (YandexGame.auth == true)
         {
+            userStatus.text = "Online";
             Debug.Log("User authorization ok");
         }
         else
@@ -30,6 +31,7 @@ public class CheckConnectYG : MonoBehaviour
             Debug.Log("User not authorization");
             YandexGame.AuthDialog();
         }
+        YandexGame.RewVideoShow(0);
         GameObject scoreBO = GameObject.Find("BestScore");
         scoreBest = scoreBO.GetComponent<TextMeshProUGUI>();
         scoreBest.text = "Best Score: " + YandexGame.savesData.bestScore.ToString();
